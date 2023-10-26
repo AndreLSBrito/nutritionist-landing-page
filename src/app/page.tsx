@@ -8,6 +8,7 @@ import womans from '../../public/womans.svg'
 import man from '../../public/man.svg'
 import { Carrossel } from './components/carrossel'
 import { CheckItem } from './components/checkItem'
+import { Title } from './components/title'
 
 export default function Home() {
   return (
@@ -89,9 +90,12 @@ export default function Home() {
       </section>
 
       <section className='flex flex-col px-10 py-10 gap-5 w-screen bg-grayLighter text-white'>
-        <h1 className='font-bold text-2xl text-primary'>
-          "FAZER CERTO A DIETA ERRADA NÃO TE TRARÁ RESULTADOS"
-        </h1>
+        <Title 
+          text='"FAZER CERTO A DIETA ERRADA NÃO TE TRARÁ RESULTADOS"'
+          variant='primary'
+        />
+          
+        
 
         <p>
           Durante muitos anos eu via pessoas se dedicando aos 
@@ -118,9 +122,10 @@ export default function Home() {
       </section>
 
       <section className='flex flex-col px-10 py-10 gap-5 w-screen text-white'>
-        <h1 className='font-bold text-2xl text-primary'>
-          O QUE VOCÊ TERÁ NO MEU ACOMPANHAMENTO?
-        </h1>
+        <Title
+          text='O QUE VOCÊ TERÁ NO MEU ACOMPANHAMENTO?'
+          variant='white'
+        />
 
         <div className='border border-primary w-50 h-50'>
           FOTO DO FRED
@@ -137,6 +142,70 @@ export default function Home() {
         <CheckItem text='Plano de treino específico para seu objetivo.'/>
         
         <Button/>
+      </section>
+
+      <section className='flex flex-col px-10 py-10 gap-5 w-screen text-white justify-center items-center'>
+        <Title
+          text='COMO FUNCIONA?'
+          variant='white'
+        />
+
+        <div className="grid grid-cols-2 gap-2">
+          <Image
+            src="/card01.svg"
+            alt='Escolha o plano ideal para você'
+            width={200}
+            height={500}
+            sizes='100vw'
+          />
+
+          <Image
+            src="/card02.svg"
+            alt='Conversa com o nutricionista'
+            width={225}
+            height={500}
+            sizes='100vw'
+          />
+
+          <Image
+            src="/card03.svg"
+            alt='Consulta e avaliação'
+            width={200}
+            height={500}
+            sizes='100vw'
+          />
+
+          <Image
+            src="/card04.svg"
+            alt='Planejamento alimentar'
+            width={200}
+            height={500}
+            sizes='100vw'
+          />
+
+          <Image
+            src="/card05.svg"
+            alt='Acompanhamento e suporte'
+            width={200}
+            height={500}
+            sizes='100vw'
+          />
+
+          <Button/>
+        </div>
+      </section>
+
+      <section className='flex flex-col px-10 py-10 gap-5 w-screen text-white justify-center items-center'> 
+        <Title
+          text='O QUE MEUS PACIENTES DIZEM?'
+          variant='white'
+        />
+
+        <div>
+          <Carrossel
+            srcImages={['/man.svg', 'older-man.svg', 'womans.svg']}
+          />
+        </div>
       </section>
 
     </main>
