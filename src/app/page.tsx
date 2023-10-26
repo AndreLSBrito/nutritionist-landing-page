@@ -44,20 +44,10 @@ export default function Home() {
       </section>
       
       <section className='flex flex-col px-10 py-8 gap-5 w-screen'>
-        <div className='flex gap-1 h-52 max-w-max overflow-hidden'>
-          <Image 
-            src={man} 
-            alt='Personal trainer'
-          />
-
-          <Image 
-            src={womans}
-            alt='Mulheres exercitando'
-          />
-          
-          <Image
-            src={olderMan} 
-            alt='Homem mais velho exercitando'
+        <div className='flex gap-1 h-80 max-w-max overflow-hidden'>
+          <Carrossel
+            srcImages={['/man.svg', 'womans.svg', 'older-man.svg']}
+            width='w-full'
           />
         </div>
 
@@ -203,7 +193,8 @@ export default function Home() {
 
         <div>
           <Carrossel
-            srcImages={['/man.svg', 'older-man.svg', 'womans.svg']}
+            srcImages={['/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg']}
+            width='w-[200px]'
           />
         </div>
       </section>
