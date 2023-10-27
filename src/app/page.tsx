@@ -3,12 +3,10 @@ import { Logo } from './components/logo'
 import { Button } from './components/button'
 import { Separator } from './components/separator'
 import { InfoCard } from './components/infoCard'
-import olderMan from '../../public/older-man.svg'
-import womans from '../../public/womans.svg'
-import man from '../../public/man.svg'
 import { Carrossel } from './components/carrossel'
 import { CheckItem } from './components/checkItem'
 import { Title } from './components/title'
+import { DoubtCard } from './components/doubtCard'
 
 export default function Home() {
   return (
@@ -85,8 +83,6 @@ export default function Home() {
           variant='primary'
         />
           
-        
-
         <p>
           Durante muitos anos eu via pessoas se dedicando aos 
           seus objetivos e esbarrando em estratégias de dieta
@@ -185,7 +181,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col px-10 py-10 gap-5 w-screen text-white justify-center items-center'> 
+      <section className='flex bg-grayLighter flex-col px-10 py-10 gap-5 w-screen text-white justify-center items-center'> 
         <Title
           text='O QUE MEUS PACIENTES DIZEM?'
           variant='white'
@@ -198,6 +194,68 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <section className='flex flex-col px-10 py-10 gap-5 w-screen text-white justify-center items-center'>
+        <Title
+          text='PRINCIPAIS DÚVIDAS'
+          variant='white'
+        />
+
+        <div className='flex flex-col gap-5'>
+          <DoubtCard
+            doubt='QUAL O PRAZO DE ENTREGA DA DIETA?'
+            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+          />
+          <DoubtCard
+            doubt='CASO EU DESISTA, TEREI MEU DINHEIRO DE VOLTA?'
+            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+          />
+          <DoubtCard
+            doubt='QUAIS OS LOCAIS DE ATENDIMENTO PRESENCIAL?'
+            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+          />
+          <DoubtCard
+            doubt='COMO É FEITA A CONSULTA ONLINE?'
+            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+          />
+          <DoubtCard
+            doubt='QUAL A DIFERENÇA DA CONSULTA PARA O ACOMPANHAMENTO?'
+            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+          />
+          <DoubtCard
+            doubt='A DIETA TROCA TODOS OS MESES?'
+            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+          />
+          <DoubtCard
+            doubt='A DIETA É MUITO RESTRITIVA?'
+            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+          />
+
+        </div>
+      </section>
+
+      <article className='flex flex-col px-10 py-10 gap-5 w-screen text-white justify-center items-center text-center max-w-2xl self-center'>
+        <Title
+          text='AGORA VOCÊ TEM APENAS 2 OPÇÕES'
+          variant='white'
+        />
+
+        <h2 className='text-primary text-lg font-bold mt-[-20px]'>FECHAR ESSA PÁGINA E CONTINUAR COMO ESTÁ...</h2>
+
+        
+        <p>Você pode simplesmente fechar essa página e continuar tendo os mesmo resultados, ou, infelizmente, não tendo resultado algum...</p>  
+        <p>Pode ignorar essa oportunidade de ter um acompanhamento personalizado, conseguir transformar o seu corpo e poder olhar no espelho novamente, se sentindo feliz com o que vê... OU </p>  
+        
+
+        <Title
+          text='COMEÇAR AGORA MESMO, SEM NENHUM RISCO.'
+          variant='primary'
+        />
+
+        <p>Você pode começar agora mesmo em nossa turma e ter a transformação que você tanto quer no seu corpo sem NENHUM RISCO!</p>
+
+        <Button/>
+      </article>
 
     </main>
   )
