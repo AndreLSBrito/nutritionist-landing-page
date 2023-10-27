@@ -11,9 +11,12 @@ import { DoubtCard } from './components/doubtCard'
 export default function Home() {
   return (
     <main className="flex w-screen min-h-screen flex-col  bg-grayPrimary">
-      <section className='bg-search-background bg-cover bg-center bg-no-repeat lg:bg-none'>
-        <div className='flex flex-col gap-2 max-w-md px-10 py-12'>
+      <section className='flex items-center bg-search-background h-[100vh] w-full bg-cover bg-center bg-no-repeat lg:bg-none justify-center'>
+        <div className=' flex top-0 left-10 p-5 absolute'>
           <Logo/>
+        </div>
+
+        <div className='flex flex-col gap-2 max-w-md px-10 py-12 items-center'>
           
           <article className='flex flex-col text-white gap-2'>
             <h1 className='font-bold text-2xl'><span className='text-primary'>APRENDA</span> A COMER DE VERDADE E CONQUISTE A <span className='text-primary'>SAÚDE</span> E O <span className='text-primary'>FÍSICO</span> QUE SEMPRE <span className='text-primary'>DESEJOU</span>.</h1>
@@ -34,45 +37,43 @@ export default function Home() {
           </div>
         </div>
         
-        <div className='absolute -z-1 backg'>
-          {/* <Image src="/background.svg" alt="imagem de background" width={400} height={500} className='opacity-25'/> */}
-        </div>
-
         <Separator w='90%'/>
       </section>
       
-      <section className='flex flex-col px-10 py-8 gap-5 w-screen'>
-        <div className='flex gap-1 h-80 max-w-max overflow-hidden'>
+      <section className='flex flex-col px-10 py-8 gap-5 w-screen items-center'>
+        <div className='flex h-96 max-w-max overflow-hidden'>
           <Carrossel
             srcImages={['/man.svg', 'womans.svg', 'older-man.svg']}
-            width='w-full'
+            width='w-[200px]'
           />
         </div>
 
-        <article className='flex flex-col text-white gap-4'>
-            <h1 className='font-bold text-2xl'>
-              PARA QUEM É MEU ACOMPANHAMENTO?
-            </h1>
+        <article className='flex flex-col text-white gap-4 items-center'>
+            <Title
+              text='PARA QUEM É MEU ACOMPANHAMENTO?'
+              variant='white'
+            />
 
-            <CheckItem 
-              text="Não aguenta mais treinar sem ter resultados."
-            />
+            <div className='flex flex-col gap-3 mt-5'>
+              <CheckItem 
+                text="Não aguenta mais treinar sem ter resultados."
+              />
+              
+              <CheckItem 
+                text="Já tentou fazer dieta, mas nunca conseguiu seguir por muito tempo."
+              />
+              
+              <CheckItem 
+                text="Adultos que estão dispostos a se dedicar ao máximo para obter excelentes resultados."
+              />
+              
+              <CheckItem
+              text="Já está cansado de gastar com suplementação, procedimentos e estratégias que não funcionam."
+              />
+            </div>
             
-            <CheckItem 
-              text="Já tentou fazer dieta, mas nunca conseguiu seguir por muito tempo."
-            />
-            
-            <CheckItem 
-              text="Adultos que estão dispostos a se dedicar ao máximo para obter excelentes resultados."
-            />
-            
-            <CheckItem
-             text="Já está cansado de gastar com suplementação, procedimentos e estratégias que não funcionam."
-            />
-            
-            <div className='py-5'>
+            <div className='py-5 self-center'>
               <Button/>
-
             </div>
         </article>
       </section>
@@ -107,40 +108,60 @@ export default function Home() {
         </p>
       </section>
 
-      <section className='flex flex-col px-10 py-10 gap-5 w-screen text-white'>
-        <Title
-          text='O QUE VOCÊ TERÁ NO MEU ACOMPANHAMENTO?'
-          variant='white'
-        />
-
-        <div className='border border-primary w-50 h-50'>
-          FOTO DO FRED
+      <section className='flex flex-col px-10 py-10 gap-5 w-screen text-white items-center'>
+        <div className='w-50 h-50'>
+          <Image
+              src="/fred-apresentation.svg"
+              alt='Nutricionista Fred Oliveira'
+              width={300}
+              height={500}
+              sizes='100vw'
+            />
         </div>
 
-        <CheckItem text='Você terá um nutricionista full time a sua disposição.'/>
-        <CheckItem text='Meu compromisso é trazer o máximo de resultado, me doarei 110% para isso.'/>
-        <CheckItem text='Protocolo dietético com alimentos que se encaixam na sua rotina, gostos que cabem no seu bolso.'/>
-        <CheckItem text='Dieta completa por PDF ou impressa se preferir.'/>
-        <CheckItem text='Trocas inteligentes de substitutos para alimentos, facilitando sua vida e evitando que enjoe.'/>
-        <CheckItem text='Gráficos de sua evolução através de exames de Bioimpedância elétrica e anamnese.'/>
-        <CheckItem text='Consultas online e presencial.'/>
-        <CheckItem text='Avaliação física.'/>
-        <CheckItem text='Plano de treino específico para seu objetivo.'/>
-        
-        <Button/>
+        <article className='flex flex-col text-white gap-4 items-center'>
+          <Title
+            text='O QUE VOCÊ TERÁ NO MEU ACOMPANHAMENTO?'
+            variant='white'
+          />
+
+          <div className='flex flex-col gap-3 mt-5'>
+            <CheckItem text='Você terá um nutricionista full time a sua disposição.'/>
+
+            <CheckItem text='Meu compromisso é trazer o máximo de resultado, me doarei 110% para isso.'/>
+
+            <CheckItem text='Protocolo dietético com alimentos que se encaixam na sua rotina, gostos que cabem no seu bolso.'/>
+
+            <CheckItem text='Dieta completa por PDF ou impressa se preferir.'/>
+
+            <CheckItem text='Trocas inteligentes de substitutos para alimentos, facilitando sua vida e evitando que enjoe.'/>
+
+            <CheckItem text='Gráficos de sua evolução através de exames de Bioimpedância elétrica e anamnese.'/>
+
+            <CheckItem text='Consultas online e presencial.'/>
+
+            <CheckItem text='Avaliação física.'/>
+
+            <CheckItem text='Plano de treino específico para seu objetivo.'/>
+          </div>
+        </article>
+
+        <div className='py-5 self-center'>
+          <Button/>
+        </div>
       </section>
 
-      <section className='flex flex-col px-10 py-10 gap-5 w-screen text-white justify-center items-center'>
+      <section className='flex flex-col px-10 pb-10 gap-5 w-screen text-white justify-center items-center'>
         <Title
           text='COMO FUNCIONA?'
           variant='white'
         />
 
-        <div className="grid grid-cols-2 gap-2">
+        <div className="flex flex-col gap-2 mt-5">
           <Image
             src="/card01.svg"
             alt='Escolha o plano ideal para você'
-            width={200}
+            width={250}
             height={500}
             sizes='100vw'
           />
@@ -148,7 +169,7 @@ export default function Home() {
           <Image
             src="/card02.svg"
             alt='Conversa com o nutricionista'
-            width={225}
+            width={250}
             height={500}
             sizes='100vw'
           />
@@ -156,7 +177,7 @@ export default function Home() {
           <Image
             src="/card03.svg"
             alt='Consulta e avaliação'
-            width={200}
+            width={250}
             height={500}
             sizes='100vw'
           />
@@ -164,7 +185,7 @@ export default function Home() {
           <Image
             src="/card04.svg"
             alt='Planejamento alimentar'
-            width={200}
+            width={250}
             height={500}
             sizes='100vw'
           />
@@ -172,7 +193,7 @@ export default function Home() {
           <Image
             src="/card05.svg"
             alt='Acompanhamento e suporte'
-            width={200}
+            width={250}
             height={500}
             sizes='100vw'
           />
@@ -254,7 +275,9 @@ export default function Home() {
 
         <p>Você pode começar agora mesmo em nossa turma e ter a transformação que você tanto quer no seu corpo sem NENHUM RISCO!</p>
 
-        <Button/>
+        <div className='py-5 self-center'>
+          <Button/>
+        </div>
       </article>
 
     </main>

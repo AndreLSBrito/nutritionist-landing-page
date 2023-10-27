@@ -14,7 +14,7 @@ export function CheckItem({text}:Props){
         />
       </div>
 
-      <p className="text-lg"> {text} </p>
+      <p> {text} </p>
     </div>
   )
 }
