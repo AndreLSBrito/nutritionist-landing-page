@@ -30,16 +30,16 @@ export function Carrossel({srcImages, width}: CarrosselProps){
   return(
     <div className='flex items-center'>
       <div className='flex  justify-between items-center text-5xl text-primary'>
-          <button onClick={previousImage}>
-            <MdKeyboardArrowLeft/>
-          </button>
+        <button onClick={previousImage}>
+          <MdKeyboardArrowLeft size={24}/>
+        </button>
       </div>
 
-      <div ref={carrossel} className={`${width} h-full flex transition overflow-x-auto ease-out duration-500 md:w-[400px] lg:w-full`}>
+      <div ref={carrossel} className={`${width} h-full flex transition overflow-x-auto ease-out duration-500 [&::-webkit-scrollbar]:hidden md:w-[550px] lg:w-full`}>
         <div className="flex gap-1 [&::-webkit-scrollbar]:hidden" >
 
-        {srcImages.map((src) => (
-          <Image ref={image} src={src} alt="Print de conversa de WhatsApp" width={200} height={200} style={{transform: `translateX(-${currentImage * 102}%)`, }}/>
+        {srcImages.map((src, index) => (
+          <Image key={index} ref={image} src={src} alt="Print de conversa de WhatsApp" width={300} height={500} style={{transform: `translateX(-${currentImage * 102}%)`, }}/>
         ))}
       
         </div>
@@ -47,7 +47,7 @@ export function Carrossel({srcImages, width}: CarrosselProps){
 
       <div className='flex  justify-between items-center text-5xl text-primary'>
           <button onClick={nextImage}>
-            <MdKeyboardArrowRight/>
+            <MdKeyboardArrowRight size={24}/>
           </button>
       </div>
       
