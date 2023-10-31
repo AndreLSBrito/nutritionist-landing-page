@@ -1,9 +1,13 @@
 interface props {
-  w: string
+  w: number
 }
 
 export function Separator({w} :props){
   return(
-    <div className={`border w-[${w}]`}/>
+    <div className={`w-full`}>
+      <div className={`w-[${w}%] border-[0.1px]`}>
+
+      </div>
+    </div>
   )
 }
