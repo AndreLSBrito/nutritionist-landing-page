@@ -19,9 +19,9 @@ export default function Home() {
         <div className='flex flex-col gap-2 max-w-[650px] px-10 py-12 items-center lg:mt-12 lg:items-start'>
           
           <article className='flex flex-col text-white gap-2'>
-            <h1 className='font-bold text-2xl'><span className='text-primary'>APRENDA</span> A COMER DE VERDADE E CONQUISTE A <span className='text-primary'>SAÚDE</span> E O <span className='text-primary'>FÍSICO</span> QUE SEMPRE <span className='text-primary'>DESEJOU</span>.</h1>
+            <h1 className='font-extrabold text-2xl'><span className='text-primary'>APRENDA</span> A COMER DE VERDADE E CONQUISTE A <span className='text-primary'>SAÚDE</span> E O <span className='text-primary'>FÍSICO</span> QUE SEMPRE <span className='text-primary'>DESEJOU</span>.</h1>
   
-            <Separator w='45%'/>
+            <Separator w={45}/>
 
             <h3 className='text-sm'>Comendo até um docinho se quiser.</h3> 
     
@@ -29,7 +29,7 @@ export default function Home() {
 
           <Button/>
 
-          <div className='flex flex-row flex-wrap max-w-lg gap-2'>
+          <div className='flex flex-row flex-wrap max-w-lg gap-2 justify-center'>
             <InfoCard number={800} text={'Atendimentos'}/>
             <InfoCard number={126} text={'Pacientes Ativos'}/>
             <InfoCard number={'1,276'} text={'Cardápios entregue'}/>
@@ -40,7 +40,7 @@ export default function Home() {
         
       </section>
       
-      <section className='flex flex-col px-10 py-8 gap-5 w-screen items-center lg:px-40 lg:grid lg:grid-cols-2'>
+      <section className='flex flex-col px-10 py-8 gap-5 w-screen items-center lg:px-40 lg:grid lg:grid-cols-[minmax(200px,425px)_500px] max-w-7xl'>
         <div className='flex h-[365px]  max-w-[480px] overflow-x-hidden lg:justify-end'>
           <Carrossel
             srcImages={['/man.svg', 'womans.svg', 'older-man.svg']}
@@ -48,7 +48,7 @@ export default function Home() {
           />
         </div>
 
-        <article className='flex flex-col text-white gap-4 items-center lg:items-start'>
+        <article className='flex flex-col text-white gap-4 items-center lg:items-start '>
           <Title
             text='PARA QUEM É MEU ACOMPANHAMENTO?'
             variant='white'
@@ -78,7 +78,7 @@ export default function Home() {
         </article>
       </section>
 
-      <section className='flex flex-col px-10 py-10 gap-5 w-screen bg-grayLighter text-white lg:px-40 text-center'>
+      <section className='flex flex-col px-10 py-10 gap-5 w-screen bg-grayLighter text-white lg:px-40 text-center items-center'>
         <Title 
           text='"FAZER CERTO A DIETA ERRADA NÃO TE TRARÁ RESULTADOS"'
           variant='primary'
@@ -108,12 +108,12 @@ export default function Home() {
         </p>
       </section>
 
-      <section className='flex flex-col px-10 py-10 gap-5 w-screen text-white items-center lg:px-40 lg:grid lg:grid-cols-2'>
-        <div className=' lg:order-2 lg:pl-10'>
+      <section className='flex max-w-7xl flex-col px-10 py-10 gap-5 w-screen text-white items-center lg:px-40 lg:grid lg:grid-cols-2'>
+        <div className=' lg:order-2 lg:pl-20'>
           <Image
             src="/fred-apresentation.svg"
             alt='Nutricionista Fred Oliveira'
-            width={300}
+            width={350}
             height={500}
             sizes='100vw'
             className='w-52 lg:w-auto'
@@ -153,7 +153,7 @@ export default function Home() {
 
       </section>
 
-      <section className='flex flex-col px-10 pb-10 gap-5 w-screen text-white justify-center items-center lg:items-start lg:px-40 lg:grid lg:grid-cols-[250px_minmax(808px,_1fr)]'>
+      <section className='flex flex-col max-w-[90rem] px-10 pb-10 gap-5 w-screen text-white justify-center items-center lg:items-start lg:px-40 lg:grid lg:grid-cols-[250px_minmax(808px,_1fr)]'>
         <Title
           text='COMO FUNCIONA?'
           variant='white'
@@ -163,8 +163,8 @@ export default function Home() {
           <Image
             src="/card01.svg"
             alt='Escolha o plano ideal para você'
-            width={400}
-            height={500}
+            width={350}
+            height={450}
             sizes='100vw'
             
           />
@@ -172,8 +172,8 @@ export default function Home() {
           <Image
             src="/card02.svg"
             alt='Conversa com o nutricionista'
-            width={400}
-            height={500}
+            width={350}
+            height={450}
             sizes='100vw'
             
           />
@@ -181,31 +181,33 @@ export default function Home() {
           <Image
             src="/card03.svg"
             alt='Consulta e avaliação'
-            width={400}
-            height={500}
+            width={350}
+            height={450}
             sizes='100vw'
           />
 
           <Image
             src="/card04.svg"
             alt='Planejamento alimentar'
-            width={400}
-            height={500}
+            width={350}
+            height={450}
             sizes='100vw'
           />
 
           <Image
             src="/card05.svg"
             alt='Acompanhamento e suporte'
-            width={400}
-            height={500}
+            width={330}
+            height={450}
             sizes='100vw'
           />
 
-          <Button
-            width={400}
-            height={200}
-          />
+          <div className='pl-4 self-center'>
+            <Button
+              width={300}
+              height={200}
+            />
+          </div>
         </div>
       </section>
 
