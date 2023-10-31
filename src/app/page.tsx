@@ -153,7 +153,7 @@ export default function Home() {
 
       </section>
 
-      <section className='flex flex-col px-10 pb-10 gap-5 w-screen text-white justify-center items-center lg:items-start lg:px-40 lg:grid lg:grid-cols-[250px_minmax(810px,_1fr)]'>
+      <section className='flex flex-col px-10 pb-10 gap-5 w-screen text-white justify-center items-center lg:items-start lg:px-40 lg:grid lg:grid-cols-[250px_minmax(400px,_1fr)]'>
         <Title
           text='COMO FUNCIONA?'
           variant='white'
@@ -209,7 +209,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex bg-grayLighter flex-col  px-10 py-10 gap-5 w-screen text-white items-center lg:px-40 lg:grid lg:grid-cols-[250px_minmax(810px,_1fr)] lg:items-start'> 
+      <section className='flex bg-grayLighter flex-col  px-10 py-10 gap-5 w-screen text-white items-center lg:px-40 lg:grid lg:grid-cols-[250px_minmax(400px,_1fr)] lg:items-start'> 
         <Title
           text='O QUE MEUS PACIENTES DIZEM?'
           variant='white'
