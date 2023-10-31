@@ -41,10 +41,10 @@ export default function Home() {
       </section>
       
       <section className='flex flex-col px-10 py-8 gap-5 w-screen items-center lg:px-40 lg:grid lg:grid-cols-2'>
-        <div className='flex h-[365px]  max-w-[480px] overflow-hidden lg:justify-end'>
+        <div className='flex h-[365px]  max-w-[480px] overflow-x-hidden lg:justify-end'>
           <Carrossel
             srcImages={['/man.svg', 'womans.svg', 'older-man.svg']}
-            width='w-[208px]'
+            width='w-[180px] lg:w-[full]'
           />
         </div>
 
@@ -153,7 +153,7 @@ export default function Home() {
 
       </section>
 
-      <section className='flex flex-col px-10 pb-10 gap-5 w-screen text-white justify-center items-center lg:items-start lg:px-40 lg:grid lg:grid-cols-[250px_minmax(400px,_1fr)]'>
+      <section className='flex flex-col px-10 pb-10 gap-5 w-screen text-white justify-center items-center lg:items-start lg:px-40 lg:grid lg:grid-cols-[250px_minmax(808px,_1fr)]'>
         <Title
           text='COMO FUNCIONA?'
           variant='white'
