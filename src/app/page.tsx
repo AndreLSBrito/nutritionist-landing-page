@@ -219,8 +219,9 @@ export default function Home() {
 
         <div className=''>
           <Carrossel
-            srcImages={['/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg']}
+            srcImages={['/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg']}
             width='w-[270px]'
+            autoPlay={false}
           />
         </div>
       </section>
