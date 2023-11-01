@@ -41,10 +41,10 @@ export default function Home() {
       </section>
       
       <section className='flex flex-col px-10 py-8 gap-5 w-screen items-center lg:px-40 lg:grid lg:grid-cols-[minmax(200px,425px)_500px] max-w-7xl'>
-        <div className='flex h-[365px]  max-w-[480px] overflow-x-hidden lg:justify-end'>
+        <div className='flex h-[365px] max-w-[480px] overflow-x-hidden lg:justify-end'>
           <Carrossel
             srcImages={['/man.svg', 'womans.svg', 'older-man.svg']}
-            width='w-[180px] lg:w-[full]'
+            width='w-[180px] md:h-[320px] md:w-[180px] lg:w-[full]'
           />
         </div>
 
@@ -219,7 +219,7 @@ export default function Home() {
 
         <div className=''>
           <Carrossel
-            srcImages={['/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg']}
+            srcImages={['/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg']}
             width='w-[270px]'
             autoPlay={false}
           />
