@@ -32,8 +32,8 @@ export default function Home() {
           <div className='flex flex-row flex-wrap max-w-lg gap-2 justify-center'>
             <InfoCard number={800} text={'Atendimentos'}/>
             <InfoCard number={126} text={'Pacientes Ativos'}/>
-            <InfoCard number={'1,276'} text={'Cardápios entregue'}/>
-            <InfoCard number={'1,183'} text={'Avaliações realizadas'}/>
+            <InfoCard number={'1.276'} text={'Cardápios entregues'}/>
+            <InfoCard number={'1.183'} text={'Avaliações realizadas'}/>
           </div>
           
         </div>
