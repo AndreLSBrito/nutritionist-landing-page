@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'search-background': "url(/background.svg)"
+        'search-background-mb': "url(/background-mobile.png)",
+        'search-background-dk': "url(/background-desktop.svg)"
       },
       colors: {
         primary: '#10958e',

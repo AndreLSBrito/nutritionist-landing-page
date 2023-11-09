@@ -11,7 +11,7 @@ import { DoubtCard } from './components/doubtCard'
 export default function Home() {
   return (
     <main className="flex max-w-full min-h-screen flex-col  bg-grayPrimary overflow-x-hidden">
-      <section className='flex items-center bg-search-background h-[100vh] w-full bg-cover bg-center bg-no-repeat lg:bg-none justify-center lg:justify-start lg:px-40 lg:h-auto lg:mt-20'>
+      <section className='flex items-center bg-search-background-mb lg:bg-search-background-dk h-[100vh] w-full bg-cover bg-center bg-no-repeat justify-center lg:items-start lg:justify-start lg:px-40  lg:pt-20'>
         <div className=' flex top-0 left-10 p-5 absolute lg:top-8 lg:left-44'>
           <Logo/>
         </div>
