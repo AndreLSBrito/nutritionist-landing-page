@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <main className="flex max-w-full min-h-screen flex-col  bg-grayPrimary overflow-x-hidden">
       <section className='flex items-center bg-search-background-mb lg:bg-search-background-dk h-[100vh] w-full bg-cover bg-center bg-no-repeat justify-center lg:items-start lg:justify-start lg:px-40  lg:pt-20'>
-        <div className=' flex top-0 left-10 p-5 absolute lg:top-8 lg:left-44'>
+        <div className='animate-bounce flex top-0 left-10 p-5 absolute lg:top-8 lg:left-44'>
           <Logo/>
         </div>
 
-        <div className='flex flex-col gap-2 max-w-[650px] px-10 py-12 items-center lg:mt-12 lg:items-start'>
+        <div className='flex flex-col gap-2 max-w-[650px] px-10 py-12 items-center animate-bounce lg:mt-12 lg:items-start'>
           
           <article className='flex flex-col text-white gap-2'>
             <h1 className='font-extrabold text-2xl'><span className='text-primary'>APRENDA</span> A COMER DE VERDADE E CONQUISTE A <span className='text-primary'>SAÚDE</span> E O <span className='text-primary'>FÍSICO</span> QUE SEMPRE <span className='text-primary'>DESEJOU</span>.</h1>
@@ -40,7 +40,7 @@ export default function Home() {
         
       </section>
       
-      <section className='flex flex-col px-10 py-8 gap-5 w-screen items-center lg:px-40 lg:grid lg:grid-cols-[minmax(200px,425px)_500px] max-w-7xl'>
+      <section className='flex flex-col px-10 py-8 gap-5 w-screen items-center lg:px-40 lg:grid lg:grid-cols-[minmax(200px,425px)_500px] max-w-7xl animate-on-enter animate-slideIn group-focus-visible:animate-slideIn'>
         <div className='flex h-[365px] max-w-[480px] overflow-x-hidden lg:justify-end'>
           <Carrossel
             srcImages={['/man.svg', 'womans.svg', 'older-man.svg']}

@@ -61,10 +61,16 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+         "slideIn": {
+           from: {"margin-left": "100%", width: "300%"},
+           to: { "margin-left": "0%", width: "100%"}
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "bounce": "bounce 1.5s 0.5",
+        "slideIn": "slideIn 2s 1",
       },
     },
   },
