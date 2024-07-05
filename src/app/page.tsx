@@ -11,29 +11,32 @@ import { DoubtCard } from './components/doubtCard'
 export default function Home() {
   return (
     <main className="flex max-w-full min-h-screen flex-col  bg-grayPrimary overflow-x-hidden">
-      <section className='flex items-center bg-search-background-mb lg:bg-search-background-dk h-[100vh] w-full bg-cover bg-center bg-no-repeat justify-center lg:items-start lg:justify-start lg:px-40  lg:pt-20'>
-        <div className='animate-bounce flex top-0 left-10 p-5 absolute lg:top-8 lg:left-44'>
+       <div className='animate-bounce flex top-0 right-10 p-5 absolute lg:top-0 lg:right-4'>
           <Logo/>
         </div>
+      <section className='flex items-center bg-search-background-mb lg:bg-search-background-dk h-[100vh] w-full bg-cover bg-center bg-no-repeat justify-center lg:items-start lg:justify-start lg:px-40  lg:pt-20'>
+       
 
         <div className='flex flex-col gap-2 max-w-[650px] px-10 py-12 items-center animate-bounce lg:mt-12 lg:items-start'>
           
           <article className='flex flex-col text-white gap-2'>
-            <h1 className='font-extrabold text-2xl'><span className='text-primary'>APRENDA</span> A COMER DE VERDADE E CONQUISTE A <span className='text-primary'>SAÚDE</span> E O <span className='text-primary'>FÍSICO</span> QUE SEMPRE <span className='text-primary'>DESEJOU</span>.</h1>
+            <h1 className='font-extrabold text-4xl'>PROJETO <span className='text-primary'>30</span> DIAS</h1>
+            <h2 className='font-semibold text-1xl'><span className='text-primary'>APRENDA</span> A COMER DE VERDADE E CONQUISTE A <span className='text-primary'>SAÚDE</span> E O <span className='text-primary'>FÍSICO</span> QUE SEMPRE <span className='text-primary'>DESEJOU</span>.</h2>
   
             <Separator w={45}/>
 
-            <h3 className='text-sm'>Comendo até um docinho se quiser.</h3> 
+            <h3 className='text-sm'>O projeto para você que quer alcançar resultados de verdade e a sua melhor versão.</h3> 
     
           </article>
 
           <Button/>
 
           <div className='flex flex-row flex-wrap max-w-lg gap-2 justify-center'>
-            <InfoCard number={800} text={'Atendimentos'}/>
-            <InfoCard number={126} text={'Pacientes Ativos'}/>
-            <InfoCard number={'1.276'} text={'Cardápios entregues'}/>
-            <InfoCard number={'1.183'} text={'Avaliações realizadas'}/>
+            <InfoCard number={1000} text={'Corpos transformados'}/>
+            {/* <InfoCard number={126} text={'Pacientes Ativos'}/> */}
+            <InfoCard number={'2.500'} text={'Cardápios entregues'}/>
+            {/* <InfoCard number={'1.183'} text={'Avaliações realizadas'}/> */}
+            <InfoCard number={13} text={'Anos de experiência'}/>
           </div>
           
         </div>
@@ -43,32 +46,32 @@ export default function Home() {
       <section className='flex flex-col px-10 py-8 gap-5 w-screen items-center lg:px-40 lg:grid lg:grid-cols-[minmax(200px,425px)_500px] max-w-7xl animate-on-enter animate-slideIn group-focus-visible:animate-slideIn'>
         <div className='flex h-[365px] max-w-[480px] overflow-x-hidden lg:justify-end'>
           <Carrossel
-            srcImages={['/man.svg', 'womans.svg', 'older-man.svg']}
+            srcImages={['/1.png', '/2.png', '/3.png', '/4.png']}
             width='w-[180px] md:h-[320px] md:w-[180px] lg:w-[full]'
           />
         </div>
 
         <article className='flex flex-col text-white gap-4 items-center lg:items-start '>
           <Title
-            text='PARA QUEM É MEU ACOMPANHAMENTO?'
+            text='PARA QUEM É O PROJETO?'
             variant='white'
           />
           
           <div className='flex flex-col gap-3 mt-5'>
             <CheckItem 
-              text="Não aguenta mais treinar sem ter resultados."
+              text="Quer emagrecer de forma saudável."
             />
             
             <CheckItem 
-              text="Já tentou fazer dieta, mas nunca conseguiu seguir por muito tempo."
+              text="Quer resultados de verdade, em 30 dias."
             />
             
             <CheckItem 
-              text="Adultos que estão dispostos a se dedicar ao máximo para obter excelentes resultados."
+              text="Já tentou emagrecer várias vezes e desistiu."
             />
             
             <CheckItem
-            text="Já está cansado de gastar com suplementação, procedimentos e estratégias que não funcionam."
+            text="Deseja mudanças para hábitos mais saudáveis."
             />
           </div>
             
@@ -80,32 +83,22 @@ export default function Home() {
 
       <section className='flex flex-col px-10 py-10 gap-5 w-screen bg-grayLighter text-white lg:px-40 text-center items-center'>
         <Title 
-          text='"FAZER CERTO A DIETA ERRADA NÃO TE TRARÁ RESULTADOS"'
+          text='"QUEM É FRED OLIVEIRA?"'
           variant='primary'
         />
           
-        <p>
-          Durante muitos anos eu via pessoas se dedicando aos 
-          seus objetivos e esbarrando em estratégias de dieta
-          aleatórias.
-        </p>
+          <p>Sou um profissional de Educação Física e Nutricionista Esportivo.</p>
 
-        <p>
-          Posso te garantir que não é pro falta de força de vontade
-          que os resultados não vem, mas sim, pela ausência de um
-          método e de uma organização eficiente.
-        </p>
+          <p>Tenho pós-graduação em Metabolismo e Emagrecimento.</p>
 
-        <p>
-          Eu vou te ensinar a comer melhor e te provar que a qualidade
-          do que você faz é muito mais importante do que por quanto
-          você faz.
-        </p>
+          <p>Também sou pós-graduado em Performance no Esporte.</p>
 
-        <p>
-          O grande segredo não está em fazer mais, e sim, em fazer
-          MELHOR!
-        </p>
+          <p>Além disso, fui atleta de Fisiculturismo e atualmente sou Coach de Atletas.</p>
+
+          <p> Com mais de 13 anos de experiência na área de saúde, conheço bem o que funciona e o que não funciona.</p>
+
+          <p>Estou aqui para ajudar você a alcançar sua melhor versão em apenas 30 dias.</p>
+
       </section>
 
       <section className='flex max-w-7xl flex-col px-10 py-10 gap-5 w-screen text-white items-center lg:px-40 lg:grid lg:grid-cols-2'>
@@ -122,28 +115,26 @@ export default function Home() {
 
         <article className='flex flex-col text-white gap-4 items-center lg:items-start'>
           <Title
-            text='O QUE VOCÊ TERÁ NO MEU ACOMPANHAMENTO?'
+            text='O QUE VOCÊ GANHA AO FAZER PARTE DO PROJETO 30 DIAS?'
             variant='white'
           />
 
           <div className='flex flex-col gap-3 mt-5'>
-            <CheckItem text='Você terá um nutricionista full time a sua disposição.'/>
+            <CheckItem text='Um plano alimentar personalizado.'/>
 
-            <CheckItem text='Meu compromisso é trazer o máximo de resultado, me doarei 110% para isso.'/>
+            <CheckItem text='Um plano de treino de musculação.'/>
 
-            <CheckItem text='Protocolo dietético com alimentos que se encaixam na sua rotina, gostos que cabem no seu bolso.'/>
+            <CheckItem text='Livro digital de receitas fitness.'/>
 
-            <CheckItem text='Dieta completa por PDF ou impressa se preferir.'/>
+            <CheckItem text='Treino de mobilidade.'/>
 
-            <CheckItem text='Trocas inteligentes de substitutos para alimentos, facilitando sua vida e evitando que enjoe.'/>
+            <CheckItem text='Acesso direto comigo no Whatsapp para tirar dúvidas.'/>
 
-            <CheckItem text='Gráficos de sua evolução através de exames de Bioimpedância elétrica e anamnese.'/>
+            <CheckItem text='Bônus 1: Comunidade no Whatsapp com motivação diária.'/>
 
-            <CheckItem text='Consultas online e presencial.'/>
+            <CheckItem text='Bônus 2: Planilha para regulação do sono.'/>
 
-            <CheckItem text='Avaliação física.'/>
-
-            <CheckItem text='Plano de treino específico para seu objetivo.'/>
+            <CheckItem text='Bônus 3: Método Exclusivo Emagrecimento Fred Oliveira.'/>
           </div>
        
           <div className='py-5 self-center lg:self-start'>
@@ -219,7 +210,7 @@ export default function Home() {
 
         <div className=''>
           <Carrossel
-            srcImages={['/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg', '/print2.jpg', '/print3.jpg', '/print1.jpg']}
+            srcImages={['/print1.jpeg', '/print2.jpeg', '/print3.jpeg', '/print4.jpeg', '/print5.jpeg', '/print6.jpeg']}
             width='w-[270px]'
             autoPlay={false}
           />
@@ -235,32 +226,40 @@ export default function Home() {
           />
 
           <DoubtCard
-            doubt='QUAL O PRAZO DE ENTREGA DA DIETA?'
-            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+            doubt='COMO FUNCIONA O PROJETO 30 DIAS?'
+            answer="O projeto consiste em um acompanhamento durante 30 dias. Onde você irá receber um plano alimentar , uma ficha de treino de musculação e vários conteúdos extras. Que irão te guiar no processo de emagrecimento e garantir seus primeiros resultados em, pelo menos, 30 dias."
           />
           <DoubtCard
             doubt='CASO EU DESISTA, TEREI MEU DINHEIRO DE VOLTA?'
-            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+            answer="Você terá seu dinheiro integralmente de volta, caso desista antes de iniciar o projeto e não tenha recebido seu plano alimentar."
           />
           <DoubtCard
-            doubt='QUAIS OS LOCAIS DE ATENDIMENTO PRESENCIAL?'
-            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+            doubt='COMO É FEITA A AVALIAÇÃO?'
+            answer="Te enviarei um formulário que contém perguntas relevantes para que eu possa montar seu plano alimentar e de treino, totalmente personalizado para você."
           />
-          <DoubtCard
+          {/* <DoubtCard
             doubt='COMO É FEITA A CONSULTA ONLINE?'
             answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
-          />
-          <DoubtCard
+          /> */}
+          {/* <DoubtCard
             doubt='QUAL A DIFERENÇA DA CONSULTA PARA O ACOMPANHAMENTO?'
             answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
-          />
+          /> */}
           <DoubtCard
             doubt='A DIETA TROCA TODOS OS MESES?'
-            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+            answer="O projeto consiste em apenas 30 dias, mas caso opite por participar de uma nova edição, criarei outro plano personalizado para você."
           />
           <DoubtCard
             doubt='A DIETA É MUITO RESTRITIVA?'
-            answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora suscipit dicta consequuntur dolore eaque fugit debitis cum magni, esse corporis, fuga sint itaque exercitationem! Magnam totam neque aliquam quos excepturi."
+            answer="Não, muito pelo contrário, você irá comer de tudo no seu dia a dia, de forma simples e saudável. Contando com meu acompanhamento e do apoio da nossa comunidade no Whatsapp."
+          />
+          <DoubtCard
+            doubt='VOU TER UM SUPORTE DURANTE O PERÍODO DO PROJETO 30 DIAS?'
+            answer="Sim. Você irá ter contato direto comigo por Whatsapp e também dentro do nosso grupo vip do Projeto 30 dias."
+          />
+          <DoubtCard
+            doubt='A DIETA E O TREINO SÃO PERSONALIZADOS?'
+            answer="Sim. A dieta e o treino são feitos para você conforme as suas respostas no questionário."
           />
 
         </div>

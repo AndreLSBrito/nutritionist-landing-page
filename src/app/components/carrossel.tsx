@@ -63,7 +63,7 @@ export function Carrossel({srcImages, width, autoPlay=true}: CarrosselProps){
               ref={refImage} 
               src={src} 
               alt="imagem em carrossel" 
-              width={300} 
+              width={200} 
               height={500} 
               style={{transform: `translateX(-${currentImage * 102}%)`, }}/>
           ))}

@@ -9,14 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'search-background-mb': "url(/background-mobile.png)",
-        'search-background-dk': "url(/background-desktop.svg)"
+        'search-background-mb': "url(/LEO_1278.jpg)",
+        'search-background-dk': "url(/LEO_1278.jpg)"
       },
       colors: {
-        primary: '#10958e',
-        grayPrimary: '#1c1c1c',
-        grayLighter: '#333030',
-        white: '#fefefc',
+        primary: '#149494',
+        // grayPrimary: '#fefefc',
+        // grayLighter: '#333030',
+        grayPrimary: '#ffffff',
+        grayLighter: '#d3d3d3',
+        //white: '#fefefc',
+        white: '#445463',
+        whiteLight: '#ffffff',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
